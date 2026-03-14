@@ -95,9 +95,8 @@ public class HomeFragment extends Fragment {
 
         // Ver todas noticias
         binding.tvVerNoticias.setOnClickListener(v ->
-            ((MainActivity) requireActivity()).binding.bottomNav
-                .setSelectedItemId(R.id.nav_noticias));
-
+                ((MainActivity) requireActivity()).navegarA(R.id.nav_noticias));
+              
         // Long click header = logout
         binding.tvNombreEstudiante.setOnLongClickListener(v -> {
             ((MainActivity) requireActivity()).showLogoutDialog();

@@ -52,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
     }
+    public void navegarA(int itemId) {
+        binding.bottomNav.setSelectedItemId(itemId);
+    }
 
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager()

@@ -261,7 +261,7 @@ Contraseña: 12345
 │   Splash     │  │    Login     │  │    Inicio    │
 │              │  │              │  │              │
 │  🎓 UniChile │  │  📧 Correo   │  │  Hola 👋     │
-│  Campus      │  │  🔒 Password │  │  Valentina   │
+│  Campus      │  │  🔒 Password │  │  Luciel      │
 │  Digital     │  │  [Ingresar]  │  │  Prom: 5.6   │
 └──────────────┘  └──────────────┘  └──────────────┘
 
@@ -270,7 +270,7 @@ Contraseña: 12345
 │              │  │              │  │              │
 │ Bases de     │  │ Lun Mar Mié  │  │ [Académico]  │
 │ Datos   6.0▼ │  │ 08:00-09:30  │  │ Matrícula    │
-│ ▸ Control 6.5│  │ Estructuras  │  │ 2025...      │
+│ ▸ Control 6.5│  │ Estructuras  │  │ 2026...      │
 │ ▸ Proyecto..│  │ Lab 301      │  │              │
 └──────────────┘  └──────────────┘  └──────────────┘
 ```
@@ -283,9 +283,9 @@ Desarrollado como proyecto académico para curso de **Desarrollo de Aplicaciones
 
 | Nombre | Rol |
 |---|---|
-| Estudiante | Desarrollador/a principal |
-| Docente | Supervisión técnica |
 
+| Docente Sabina Romero|  Supervisión técnica  | Desarrollador/a principal
+ 
 ---
 
 ## 📄 Licencia

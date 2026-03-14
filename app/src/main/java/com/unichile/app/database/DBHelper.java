@@ -56,7 +56,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private void insertSampleData(SQLiteDatabase db) {
         // Estudiante demo
         ContentValues e = new ContentValues();
-        e.put("nombre", "Valentina"); e.put("apellido", "Muñoz Pérez");
+        e.put("nombre", "Luciel"); e.put("apellido", "Salazar Romero");
         e.put("email", "estudiante@unichile.cl"); e.put("password", "12345");
         e.put("carrera", "Ingeniería en Informática"); e.put("semestre", 5);
         e.put("rut", "20.123.456-7");
@@ -94,16 +94,16 @@ public class DBHelper extends SQLiteOpenHelper {
 
         // Notas
         Object[][] ns = {
-            {ids[0],"Control 1",5.5,20,"15/03/2025"}, {ids[0],"Control 2",6.0,20,"10/04/2025"},
-            {ids[0],"Proyecto",5.8,30,"20/05/2025"},  {ids[0],"Examen Final",6.2,30,"25/06/2025"},
-            {ids[1],"Tarea 1",6.5,15,"18/03/2025"},   {ids[1],"Control",5.0,25,"22/04/2025"},
-            {ids[1],"Proyecto BD",6.8,35,"15/05/2025"},{ids[1],"Examen",5.5,25,"20/06/2025"},
-            {ids[2],"Control 1",4.5,30,"20/03/2025"}, {ids[2],"Laboratorio",6.0,30,"05/05/2025"},
-            {ids[2],"Examen Final",5.2,40,"30/06/2025"},
-            {ids[3],"Caso 1",6.0,20,"01/04/2025"},    {ids[3],"Caso 2",5.5,20,"15/04/2025"},
-            {ids[3],"Proyecto Final",6.5,40,"01/06/2025"},{ids[3],"Examen",6.0,20,"25/06/2025"},
-            {ids[4],"Prueba 1",4.0,25,"25/03/2025"},  {ids[4],"Prueba 2",4.5,25,"02/05/2025"},
-            {ids[4],"Examen Final",4.2,50,"28/06/2025"}
+            {ids[0],"Control 1",5.5,20,"15/03/2026"}, {ids[0],"Control 2",6.0,20,"10/04/2026"},
+            {ids[0],"Proyecto",5.8,30,"20/05/2026"},  {ids[0],"Examen Final",6.2,30,"25/06/2026"},
+            {ids[1],"Tarea 1",6.5,15,"18/03/2026"},   {ids[1],"Control",5.0,25,"22/04/2026"},
+            {ids[1],"Proyecto BD",6.8,35,"15/05/2026"},{ids[1],"Examen",5.5,25,"20/06/2026"},
+            {ids[2],"Control 1",4.5,30,"20/03/2026"}, {ids[2],"Laboratorio",6.0,30,"05/05/2026"},
+            {ids[2],"Examen Final",5.2,40,"30/06/2026"},
+            {ids[3],"Caso 1",6.0,20,"01/04/2026"},    {ids[3],"Caso 2",5.5,20,"15/04/2026"},
+            {ids[3],"Proyecto Final",6.5,40,"01/06/2026"},{ids[3],"Examen",6.0,20,"25/06/2026"},
+            {ids[4],"Prueba 1",4.0,25,"25/03/2026"},  {ids[4],"Prueba 2",4.5,25,"02/05/2026"},
+            {ids[4],"Examen Final",4.2,50,"28/06/2026"}
         };
         for (Object[] n : ns) {
             ContentValues v = new ContentValues();
@@ -117,24 +117,24 @@ public class DBHelper extends SQLiteOpenHelper {
 
         // Noticias
         String[][] news = {
-            {"Proceso de Matrícula 2025",
-             "Se informa a todos los estudiantes que el proceso de matrícula para el segundo semestre 2025 comienza el 15 de julio. Recuerden tener al día sus pagos de arancel para poder realizar el proceso sin inconvenientes.",
-             "10/06/2025","Académico"},
+            {"Proceso de Matrícula 2026",
+             "Se informa a todos los estudiantes que el proceso de matrícula para el segundo semestre 2026 comienza el 15 de julio. Recuerden tener al día sus pagos de arancel para poder realizar el proceso sin inconvenientes.",
+             "10/06/2026","Académico"},
             {"Feria de Empleabilidad UniChile",
              "La Universidad realizará la Feria de Empleabilidad el próximo 25 de junio en el Pabellón Central. Más de 50 empresas nacionales e internacionales estarán presentes buscando talentos universitarios.",
-             "05/06/2025","Eventos"},
+             "05/06/2026","Eventos"},
             {"Nuevo Laboratorio de IA Inaugurado",
              "Inauguramos nuestro nuevo Laboratorio de Inteligencia Artificial, equipado con las últimas tecnologías en GPU de alto rendimiento. Disponible para estudiantes de Ingeniería a partir del 1 de julio.",
-             "01/06/2025","Infraestructura"},
+             "01/06/2026","Infraestructura"},
             {"Becas de Intercambio Internacional 2026",
              "Abrimos el proceso de postulación para becas de intercambio en universidades de España, Alemania y Canadá. El plazo vence el 30 de junio. Más información en la Dirección de Relaciones Internacionales.",
-             "28/05/2025","Becas"},
+             "28/05/2026","Becas"},
             {"Campeonato Deportivo InterFacultades",
-             "Inscribe tu equipo al Campeonato Deportivo InterFacultades 2025! Disciplinas: Fútbol, Basketball, Volleyball y eSports. Las inscripciones cierran el 20 de junio en el área de Deportes.",
-             "20/05/2025","Deportes"},
+             "Inscribe tu equipo al Campeonato Deportivo InterFacultades 2026! Disciplinas: Fútbol, Basketball, Volleyball y eSports. Las inscripciones cierran el 20 de junio en el área de Deportes.",
+             "20/05/2026","Deportes"},
             {"Sistema de Biblioteca Actualizado",
              "El sistema de préstamo de libros ha sido actualizado. Ahora puedes renovar tus préstamos directamente desde la app o la web. El límite de préstamos aumenta a 5 libros simultáneos por estudiante.",
-             "15/05/2025","Servicios"}
+             "15/05/2026","Servicios"}
         };
         for (String[] nw : news) {
             ContentValues v = new ContentValues();
