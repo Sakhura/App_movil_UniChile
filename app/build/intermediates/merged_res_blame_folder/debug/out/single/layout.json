@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/item_noticia.xml",
+        "source": "com.unichile.app-main-34:/layout/item_noticia.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/fragment_home.xml",
+        "source": "com.unichile.app-main-34:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/item_materia_nota.xml",
+        "source": "com.unichile.app-main-34:/layout/item_materia_nota.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/activity_splash.xml",
+        "source": "com.unichile.app-main-34:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/fragment_noticias.xml",
+        "source": "com.unichile.app-main-34:/layout/fragment_noticias.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.unichile.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/fragment_horario.xml",
+        "source": "com.unichile.app-main-34:/layout/fragment_horario.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/item_horario.xml",
+        "source": "com.unichile.app-main-34:/layout/item_horario.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/activity_login.xml",
+        "source": "com.unichile.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/fragment_mapa.xml",
+        "source": "com.unichile.app-main-34:/layout/fragment_mapa.xml"
+    },
+    {
+        "merged": "com.unichile.app-mergeDebugResources-31:/layout/fragment_notas.xml",
+        "source": "com.unichile.app-main-34:/layout/fragment_notas.xml"
+    }
+]

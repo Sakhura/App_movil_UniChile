@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Campus UniChile</title>
+<link rel='stylesheet' href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css' />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  #map { height: 100vh; width: 100%; }
+  .legend {
+    background: white; padding: 10px; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3); font-size: 13px; line-height: 1.8;
+  }
+  .legend h4 { margin-bottom: 6px; color: #1A237E; font-size: 14px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<script src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'></script>
+<script>
+var map = L.map('map').setView([-33.4577, -70.6659], 16);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors',
+  maxZoom: 19
+}).addTo(map);
+
+function createIcon(color) {
+  return L.divIcon({
+    className: '',
+    html: '<div style="width:30px;height:30px;border-radius:50% 50% 50% 0;background:' + color +
+          ';border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.4);transform:rotate(-45deg)"></div>',
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30]
+  });
+}
+
+var lugares = [
+  { lat: -33.4577, lng: -70.6659, nombre: 'Casa Central', desc: 'Av. Libertador B. O'Higgins 1058<br>Edificio Principal', color: '#1A237E', emoji: '🏛️' },
+  { lat: -33.4570, lng: -70.6648, nombre: 'Biblioteca Central', desc: 'Lunes a Viernes: 8:30 - 21:00<br>Sábado: 9:00 - 14:00', color: '#2E7D32', emoji: '📚' },
+  { lat: -33.4583, lng: -70.6670, nombre: 'Laboratorio de Informática', desc: 'Lab 301 - Edificio Tecnológico<br>Capacidad: 40 puestos', color: '#E65100', emoji: '💻' },
+  { lat: -33.4565, lng: -70.6655, nombre: 'Casino Universitario', desc: 'Lunes a Viernes: 7:00 - 20:00<br>Almuerzo: 12:00 - 15:00', color: '#6A1B9A', emoji: '🍽️' },
+  { lat: -33.4589, lng: -70.6645, nombre: 'Estadio Universitario', desc: 'Canchas de fútbol, basketball y volleyball<br>Reservas en Deportes', color: '#00695C', emoji: '⚽' },
+  { lat: -33.4558, lng: -70.6672, nombre: 'Dirección de Estudios', desc: 'Trámites académicos<br>Lunes a Viernes: 9:00 - 17:00', color: '#D32F2F', emoji: '📋' },
+  { lat: -33.4595, lng: -70.6660, nombre: 'Centro de Salud', desc: 'Servicio médico estudiantil gratuito<br>Con cita previa', color: '#0277BD', emoji: '🏥' }
+];
+
+lugares.forEach(function(l) {
+  L.marker([l.lat, l.lng], { icon: createIcon(l.color) })
+    .addTo(map)
+    .bindPopup('<b>' + l.emoji + ' ' + l.nombre + '</b><br>' + l.desc);
+});
+
+var legend = L.control({ position: 'bottomleft' });
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'legend');
+  div.innerHTML = '<h4>🗺️ Campus UniChile</h4>' +
+    '<span class="dot" style="background:#1A237E"></span>Casa Central<br>' +
+    '<span class="dot" style="background:#2E7D32"></span>Biblioteca<br>' +
+    '<span class="dot" style="background:#E65100"></span>Laboratorios<br>' +
+    '<span class="dot" style="background:#6A1B9A"></span>Casino<br>' +
+    '<span class="dot" style="background:#D32F2F"></span>Dirección<br>' +
+    '<span class="dot" style="background:#0277BD"></span>Salud';
+  return div;
+};
+legend.addTo(map);
+</script>
+</body>
+</html>

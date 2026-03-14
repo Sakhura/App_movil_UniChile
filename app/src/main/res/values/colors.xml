@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1A237E</color>
+    <color name="primary_dark">#000051</color>
+    <color name="primary_light">#534BAE</color>
+    <color name="accent">#D32F2F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#F0F2F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="nota_buena">#2E7D32</color>
+    <color name="nota_regular">#F57F17</color>
+    <color name="nota_mala">#C62828</color>
+</resources>

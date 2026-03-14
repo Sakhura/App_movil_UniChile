@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary"
+            android:padding="20dp"
+            android:paddingTop="48dp"
+            android:paddingBottom="28dp">
+
+            <TextView android:id="@+id/tvSaludo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenida 👋"
+                android:textColor="#90CAF9"
+                android:textSize="14sp" />
+
+            <TextView android:id="@+id/tvNombreEstudiante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargando..."
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView android:id="@+id/tvCarrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#90CAF9"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- STATS CARDS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:paddingTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📊" android:textSize="28sp" />
+                    <TextView android:id="@+id/tvPromedio"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="5.0" android:textSize="32sp" android:textStyle="bold"
+                        android:textColor="@color/primary" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/promedio_general"
+                        android:textSize="11sp" android:textColor="@color/text_secondary"
+                        android:gravity="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📚" android:textSize="28sp" />
+                    <TextView android:id="@+id/tvTotalMaterias"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="5" android:textSize="32sp" android:textStyle="bold"
+                        android:textColor="@color/accent" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Asignaturas" android:textSize="11sp" android:textColor="@color/text_secondary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- PROXIMA CLASE -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/proxima_clase"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:id="@+id/tvProximaMateria"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/sin_clases_hoy"
+                    android:textSize="16sp" android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+                <TextView android:id="@+id/tvProximaInfo"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="13sp" android:textColor="@color/text_secondary"
+                    android:layout_marginTop="4dp" android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- NOTICIAS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ultimas_noticias"
+                android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+            <TextView android:id="@+id/tvVerNoticias"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/ver_todas"
+                android:textColor="@color/primary" android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoticiasHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
