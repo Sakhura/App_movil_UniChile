@@ -1,4 +1,4 @@
-#Sat Mar 14 18:28:21 CLST 2026
+#Sat Mar 14 18:47:18 CLST 2026
 base.0=E\:\\AndroidStudioi\\UniChileApp\\UniChileApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=E\:\\AndroidStudioi\\UniChileApp\\UniChileApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=E\:\\AndroidStudioi\\UniChileApp\\UniChileApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
